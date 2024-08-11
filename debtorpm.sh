@@ -9,7 +9,7 @@ echo $packagepath
 # extract the stuff
 alien -r --scripts --fixperms -g $packagename.deb
 
-#remove stupid directories that should not be in this file.
+#remove stupid directories that should not be in this file
 
 sed -i 's#%dir "/"##' $packagename/*.spec
 sed -i 's#%dir "/usr/"##' $packagename/*.spec
@@ -17,7 +17,7 @@ sed -i 's#%dir "/usr/bin/"##' $packagename/*.spec
 sed -i 's#%dir "/usr/share/"##' $packagename/*.spec
 sed -i 's#%dir "/usr/share/applications/"##' $packagename/*.spec
 
-# tell the package we don't care abour sch specific binaries in here
+# tell the package we don't care about arch specific binaries in here
 
 sed -i '12 i %define _binaries_in_noarch_packages_terminate_build 0' $packagename/*.spec
 
