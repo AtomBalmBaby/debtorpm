@@ -12,6 +12,6 @@ it will proccess the deb and eventually produce the rpm:
 
 Requirements:
 
-alien, and some other packages I do not remember.  
+alien, sed, rpmrebuild and some other packages I do not remember.  
 
 I will add to this list when I get time to test it in a VM
